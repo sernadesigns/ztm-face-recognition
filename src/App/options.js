@@ -1,3 +1,10 @@
+import Clarifai from 'clarifai';
+import { CLARIFAI_API_KEY } from './data';
+
+export const clarifaiInstance = new Clarifai.App({
+  apiKey: CLARIFAI_API_KEY
+});
+
 export const particlesOptions = {
   fpsLimit: 30,
   interactivity: {
